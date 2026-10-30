@@ -1,10 +1,13 @@
 
 void main() {
     Scanner scanner = new Scanner(System.in);
+    System.out.println("Introduce el numero de filas: ");
+    int filas = scanner.nextInt();
+    System.out.println("Introduce el numero de columnas: ");
+    int columnas = scanner.nextInt();
+    int[][] matriz = new int[filas][columnas];
 
-    int[][] matriz = new int[2][3];
-
-    System.out.println("Ingrese los elementos de la matriz 2x3:");
+    System.out.println("Ingrese los elementos de la matriz " + filas + "x" + columnas + ":");
     for (int i = 0; i < matriz.length; i++) {
         for (int j = 0; j < matriz[i].length; j++) {
             System.out.print("Elemento [" + i + "][" + j + "]: ");
