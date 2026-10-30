@@ -14,14 +14,15 @@ void main() {
 
     int sumas[] = new int[matriz[0].length];
 
-    System.out.println("La suma de cada columnas es: ");
     for(int j = 0; j<matriz[0].length; j++){
         int suma = 0;
-
         for(int i = 0; i<matriz.length; i++){
             suma += matriz[i][j];
         }
         sumas[j] = suma;
-        System.out.println("Columna " + j + ": " + suma);
+    }
+
+    for(int i = 0; i<sumas.length; i++){
+        System.out.println("Suma de la columna " + i + ": " + sumas[i]);
     }
 }
